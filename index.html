@@ -154,10 +154,10 @@
 
       <!-- Navbar -->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-      <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
         <div class="container px-3">
           <a href="index.html" class="navbar-brand pe-3">
-            <img src="assets/img/logo.svg" width="47" alt="Silicon">
+            <img src="assets/img/logo.svg" alt="Silicon" width="47">
             Silicon
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end">
@@ -286,7 +286,7 @@
             </div>      
           </div>
           <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
-            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode" data-com.bitwarden.browser.user-edited="yes">
             <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
             <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
           </div>
@@ -300,45 +300,72 @@
         </div>
       </header>
 
-
+     
       <!-- Hero -->
-      <section class="position-relative pt-md-3 pt-lg-5 mb-md-3 mb-lg-5">
-        <div class="container position-relative zindex-5 pt-5">
-          <div class="row mt-4 pt-5">
-            <div class="col-xl-4 col-lg-5 text-center text-lg-start pb-3 pb-md-4 pb-lg-0">
-              <h1 class="fs-xl text-uppercase">Professional Medical Center</h1>
-              <h3 class="display-4 pb-md-2 pb-lg-4">We Take Care of Your Health</h3>
-              <p class="fs-lg">Don't have insurance? <a href="#" class="fw-medium">Click here.</a></p>
-            </div>
-            <div class="col-xl-5 col-lg-6 offset-xl-1 position-relative zindex-5 mb-5 mb-lg-0">
-              <div class="rellax card bg-primary border-0 shadow-primary py-2 p-sm-4 p-lg-5" data-rellax-speed="-1" data-disable-parallax-down="lg">
-                <div class="card-body p-lg-3">
-                  <h2 class="text-light pb-1 pb-md-3">Silicon Medical Center</h2>
-                  <p class="fs-lg text-light pb-2 pb-md-0 mb-4 mb-md-5">Our medical center provides a wide range of health care services. We use only advanced technologies to keep your family happy and healthy, without any unexpected surprises. We appreciate your trust greatly. Our patients choose us and our services because they know we are the best.</p>
-                  <a href="#" class="btn btn-light btn-lg">
-                    About Us
-                    <i class="bx bx-right-arrow-alt lh-1 fs-4 ms-2 me-n2"></i>
-                  </a>
+      <section class="pt-lg-4 mt-lg-3">
+        <div class="position-relative overflow-hidden">
+  
+          <!-- Image -->
+          <div class="container-fluid position-relative position-lg-absolute top-0 start-0 h-100">
+            <div class="row h-100 me-n4 me-n2">
+              <div class="col-lg-7 position-relative">
+                <div class="d-none d-sm-block d-lg-none" style="height: 400px;"></div>
+                <div class="d-sm-none" style="height: 300px;"></div>
+                <div class="jarallax position-absolute top-0 start-0 w-100 h-100 rounded-3 rounded-start-0 overflow-hidden" data-jarallax data-speed="0.3">
+                  <div class="jarallax-img" style="background-image: url(assets/img/landing/financial/hero-img.jpg);"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="d-none d-lg-block" style="margin-top: -165px;"></div>
-          <div class="row align-items-end">
-            <div class="col-lg-6 d-none d-lg-block">
-              <img src="assets/img/landing/medical/hero-img-2.jpg" class="rellax rounded-3" alt="Image" data-rellax-speed="1.35" data-disable-parallax-down="md">
+
+          <div class="container position-relative zindex-5 pt-lg-5 px-0 px-lg-3">
+            <div class="row pt-lg-5 mx-n4 mx-lg-n3">
+              <div class="col-xl-6 col-lg-7 offset-lg-5 offset-xl-6 pb-5">
+  
+                <!-- Card -->
+                <div class="card bg-gradient-primary border-light overflow-hidden py-4 px-2 p-sm-4">
+                  <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255,.05);"></span>
+                  <div class="card-body position-relative zindex-5">
+                    <p class="fs-xl fw-bold text-light text-uppercase mb-3">Power your business</p>
+                    <h1 class="display-5 text-light pb-3 mb-3">«Зеленая Адриатика»</h1>
+                    <p class="fs-lg text-light opacity-70 mb-5"> - сообщество русскоговорящих экоактивистов Черногории.</p>
+                    <div class="d-flex flex-column flex-sm-row">
+                      <a href="#" class="btn btn-light shadow-primary btn-lg mb-3 mb-sm-0 me-sm-4">Get started</a>
+                      <a href="#" class="btn btn-outline-light btn-lg">
+                        Who we are
+                        <i class="bx bx-right-arrow-alt fs-4 lh-1 ms-2 me-n1"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-3 col-lg-4 offset-lg-8 offset-xxl-9 pt-lg-5 mt-xxl-5">
+  
+                <!-- Contacts (List) -->
+                <ul class="list-unstyled mb-0 px-4 px-lg-0">
+                  <li class="d-flex align-items-center pb-1 mb-2">
+                    <i class="bx bx-map fs-xl text-primary me-2"></i>
+                    6391 Elgin St. Celina, Delaware 10299
+                  </li>
+                  <li class="d-flex align-items-center pb-1 mb-2">
+                    <i class="bx bx-envelope fs-xl text-primary me-2"></i>
+                    <a href="mailto:email@example.com" class="nav-link fw-normal p-0">email@example.com</a>
+                  </li>
+                  <li class="d-flex align-items-center pb-1 mb-2">
+                    <i class="bx bx-phone-call fs-xl text-primary me-2"></i>
+                    <a href="tel:4065550120" class="nav-link fw-normal p-0">(406) 555-0120</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="d-none d-lg-block position-absolute top-0 end-0 w-50 d-flex flex-column ps-3" style="height: calc(100% - 108px);">
-          <div class="w-100 h-100 overflow-hidden bg-position-center bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/landing/medical/hero-img-1.jpg); border-bottom-left-radius: .5rem;"></div>
         </div>
       </section>
 
 
       <!-- Projects (Slider) -->
-      <section class="container pt-xl-3 pb-5">
-        <h2 class="h1 text-center text-lg-start pb-4 mb-1 mb-lg-3">Projects We Serve</h2>
+      <section class="container py-5 mt-md-3 my-lg-5">
+        <h2 class="h1 text-center text-lg-start pb-4 mb-1 mb-lg-3">Наши проекты</h2>
         <div class="row pb-2 pb-md-4 pb-lg-5">
           <div class="col-xl-4 col-lg-5 d-flex flex-column order-2 order-lg-1">
 
@@ -359,22 +386,22 @@
                 <div class="swiper-slide" data-swiper-tab="#industry-1">
                   <h3 class="h4 mb-4">
                     <a href="#" class="nav-link justify-content-center justify-content-lg-start fw-bold p-0">
-                      Transportation &amp; Logistics
+                      Рециклажица
                       <i class="bx bx-right-arrow-alt text-primary fs-3 fw-normal ms-2 mt-1"></i>
                     </a>
                   </h3>
-                  <p>Risus massa fames metus lectus diam maecenas dui. Nibh morbi id purus eget tellus diam, integer blandit. Ac condimentum a nisl sagittis, interdum. Et viverra maecenas quis cras sed gravida volutpat, cursus enim. Enim ut nulla netus porta lacus diam. Et enim ultrices nunc, nunc. In iaculis venenatis at sit.</p>
-          <div class="d-flex align-items-center mt-4">
+                  <p>Каждую последнюю субботу месяца в определённых городах Черногории движение «Зелёная Адриатика» собирает вторсырьё от жителей страны.</p>
+          <div class="d-flex align-items-center my-1">
             <div class="btn btn-icon btn-secondary btn-lg pe-none rounded d-lg-none d-xl-inline-flex">
               <i class="bx bx-time text-primary fs-3"></i>
             </div>
             <ul class="list-unstyled ps-3 ps-lg-0 ps-xl-3 mb-0">
-              <li><strong class="text-dark">Mon – Fri:</strong> 9:00 am – 22:00 pm</li>
-              <li><strong class="text-dark">Sat – Sun:</strong> 9:00 am – 20:00 pm</li>
+              <li><strong class="text-dark">Декабрь 2022:</strong> 24 число, Суббота</li>
+              <li><strong class="text-dark">Январь 2023:</strong> 28 число, Суббота</li>
             </ul>
           </div>
           <div class="position-relative">
-          <a href="#" class="btn position-relative start-0 btn-primary btn-md shadow-primary my-4">Make an appointment</a>
+          <a href="https://reciklazica.me" class="btn position-relative start-0 btn-primary btn-md shadow-primary my-5" target="_blank">Подробнейшая информация</a>
           </div>
                 </div>
 
@@ -382,22 +409,24 @@
                 <div class="swiper-slide" data-swiper-tab="#industry-2">
                   <h3 class="h4 mb-4">
                     <a href="#" class="nav-link justify-content-center justify-content-lg-start fw-bold p-0">
-                      Construction &amp; Real Estate
+                        Пункты приёма батареек
                       <i class="bx bx-right-arrow-alt text-primary fs-3 fw-normal ms-2 mt-1"></i>
                     </a>
                   </h3>
-                  <p>Nunc, amet et, et at habitant. Eget quis justo, metus at metus sapien. Urna quisque rutrum pharetra pulvinar vitae quam blandit non. Orci tempor cursus egestas quis orci at nisi maecenas. Enim in ultrices tortor, nibh quis sollicitudin tellus non maecenas. In libero ut semper nunc magna tortor.</p>
+                  <p>В различных частях Черногории были установлены контейнеры, где каждый желающий может оставить использованные батарейки.</p>
+                  <p>Всё точки нанесены <a href="https://www.google.com/maps/d/edit?mid=182yYXyE8jGLzqg5psrZc2TxoZt2BIVY&usp=sharing">на нашу карту</a>, которая постоянно обновляется и пополняется новыми пунктами приём вторсырья.</p>
                 </div>
 
                 <!-- Item -->
                 <div class="swiper-slide" data-swiper-tab="#industry-3">
                   <h3 class="h4 mb-4">
                     <a href="#" class="nav-link justify-content-center justify-content-lg-start fw-bold p-0">
-                      Education
+                        Сбор крышечек
                       <i class="bx bx-right-arrow-alt text-primary fs-3 fw-normal ms-2 mt-1"></i>
                     </a>
                   </h3>
-                  <p>Vivamus nisl sit volutpat laoreet ligula et. Nunc, duis est justo, cras ipsum vulputate eget tellus augue. Amet, sagittis ut enim nisl commodo, pharetra. Sapien imperdiet tristique interdum aliquet varius vitae facilisis vel. Erat convallis eget elit eget iaculis. Morbi id facilisis ligula odio sed amet suspendisse duis aliquet. Justo quam convallis id sed.</p>
+                  <p>Оказывается, что даже такие мелкие и на первый взгляд незначительные детали, как крышечки от бутылок, могут приносить столько пользы!</p>
+                  <p><a href="https://www.google.com/maps/d/edit?mid=182yYXyE8jGLzqg5psrZc2TxoZt2BIVY&usp=sharing">На карте отмечено</a>, где вы можете их сдать. Далее они идут на переработку и обретают вторую жизнь в виде новых полезных изделий.</p>
                 </div>
               </div>
             </div>
